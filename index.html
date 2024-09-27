@@ -219,5 +219,19 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+
+	<script type="text/javascript">
+	  (function(d, t) {
+	      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+	      v.onload = function() {
+	        window.voiceflow.chat.load({
+	          verify: { projectID: '66f62d96413f7dee89e957c6' },
+	          url: 'https://general-runtime.voiceflow.com',
+	          versionID: 'production'
+	        });
+	      }
+	      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+	  })(document, 'script');
+	</script>
     </body>
 </html>
